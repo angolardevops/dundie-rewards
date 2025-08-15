@@ -1,0 +1,1 @@
+print("Executing main entry point for dundie package... no informação")
