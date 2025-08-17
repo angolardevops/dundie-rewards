@@ -1,0 +1,10 @@
+# dev dependecies
+ipython>=9.0.0,<=9.4.0
+ipdb
+pudb
+pytest-cov
+pytest-mock
+pytest-watch
+
+# Install project as editable
+-e .
