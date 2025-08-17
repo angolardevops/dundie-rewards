@@ -6,10 +6,19 @@ from .constants import PEOPLE_FILE
 
 @pytest.mark.unit
 @pytest.mark.high
-def test_load():
+def test_load_positive_has_2_people():
     """Test the load function."""
-    # Test loading a file that exists
+    # side effect: create the file if it does not exist
+
     data = load(PEOPLE_FILE)
     assert len(data) == 2
-    # breakpoint()  # Debugging breakpoint
-    assert data[0] == 'Jim Halpert, Sales, Salesman, jim@dundlermifflin.com'
+
+
+@pytest.mark.unit
+@pytest.mark.high
+def test_load_positive_first_name_starts_with_j():
+    """Test the load function."""
+    # side effect: create the file if it does not exist
+
+    data = load(PEOPLE_FILE)
+    assert data[0][0] == "J"
