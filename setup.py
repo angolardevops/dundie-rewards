@@ -27,6 +27,7 @@ setup(
     name="dundie",
     version="0.1.0",
     author="Walter Angolar",
+    python_requires=">=3.8",
     description="Rewards Point System for Dunder Mifflin.",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
