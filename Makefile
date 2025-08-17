@@ -15,8 +15,11 @@ ipython:
 
 test:
 	@echo "Running tests"
-	@.venv/bin/python -m pytest -s
+	@.venv/bin/pytest -s
 
+testci:
+	@echo "Running tests"
+	@.venv/bin/pytest -v --junitxml=test-unit.xml
 watch:
 	@echo "Watching for changes and running tests"
 # 	@.venv/bin/ptw -- -vv -s tests/
